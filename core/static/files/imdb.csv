@@ -1,11 +1,11 @@
-gross;weeks;title;weekend
-$277.5M;4;Thor: Ragnarok;$16.8M
-$22.0M;2;The Star;$6.9M
-$69.4M;2;Wonder;$22.3M
-$6.3M;2;Roman J. Israel, Esq.;$4.5M
-$72.7M;3;Daddy's Home 2;$13.3M
-$74.2M;3;Murder on the Orient Express;$13.0M
-$59.8M;4;A Bad Moms Christmas;$5.0M
-$7.6M;3;Three Billboards Outside Ebbing, Missouri;$4.4M
-$71.2M;1;Coco;$49.0M
-$171.5M;2;Justice League;$40.7M
+title;weekend;gross;weeks
+Coco;$49.0M;$71.2M;1
+Justice League;$40.7M;$171.5M;2
+Wonder;$22.3M;$69.4M;2
+Thor: Ragnarok;$16.8M;$277.5M;4
+Daddy's Home 2;$13.3M;$72.7M;3
+Murder on the Orient Express;$13.0M;$74.2M;3
+The Star;$6.9M;$22.0M;2
+A Bad Moms Christmas;$5.0M;$59.8M;4
+Roman J. Israel, Esq.;$4.5M;$6.3M;2
+Three Billboards Outside Ebbing, Missouri;$4.4M;$7.6M;3

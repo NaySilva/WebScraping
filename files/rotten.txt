@@ -977,7 +977,7 @@ require(['jquery', 'facebook', 'globals'], function($, FB, RT) {
     <td class="left_col">
         <a href="https://www.rottentomatoes.com/tv/godless/s01">
             <span class="icon tiny certified_fresh"></span>
-                    <span class="tMeterScore">89%</span>
+                    <span class="tMeterScore">90%</span>
                 </a>
     </td>
     <td class="middle_col">
@@ -1115,7 +1115,7 @@ require(['jquery', 'facebook', 'globals'], function($, FB, RT) {
         </div>
         <div class="movie_content_area">
             <span class="icon tiny certified"></span>
-                    <span class="tMeterScore">89%</span>
+                    <span class="tMeterScore">90%</span>
                 </div>
         <p class="title noSpacing">Godless</p>
     </a>
@@ -1186,17 +1186,17 @@ require(['jquery', 'facebook', 'globals'], function($, FB, RT) {
                                 <h2 class="title">Guides</h2>
                                 <div class="newsContainer">
                                     <div class="newsContainerItem">
+                                            <a href="https://editorial.rottentomatoes.com/rt-hub/awards-tour-2017-2018/" class="articleLink unstyled">
+                                                <div class="newsPhoto" style="background-image:url('https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2017/11/27111339/awards-representative.jpg')"></div>
+                                                <div class="newsTitle">
+                                                    Awards Tour 2017/2018</div>
+                                            </a>
+                                        </div>
+                                    <div class="newsContainerItem">
                                             <a href="https://editorial.rottentomatoes.com/rt-hub/holiday-movie-tv-guide-2017/" class="articleLink unstyled">
                                                 <div class="newsPhoto" style="background-image:url('https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2017/10/31173040/holiday-guide-representative-2017.jpg')"></div>
                                                 <div class="newsTitle">
                                                     Holiday Movie &#038; TV Guide 2017</div>
-                                            </a>
-                                        </div>
-                                    <div class="newsContainerItem">
-                                            <a href="https://editorial.rottentomatoes.com/rt-hub/fall-tv-2017/" class="articleLink unstyled">
-                                                <div class="newsPhoto" style="background-image:url('https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2017/08/24125845/rep-fall-guide-2017.jpg')"></div>
-                                                <div class="newsTitle">
-                                                    Fall TV 2017</div>
                                             </a>
                                         </div>
                                     </div>
@@ -1210,17 +1210,17 @@ require(['jquery', 'facebook', 'globals'], function($, FB, RT) {
                                 <h2 class="title">RT News</h2>
                                 <div class="newsContainer">
                                     <div class="newsContainerItem">
+                                            <a href="https://editorial.rottentomatoes.com/article/lady-bird-just-broke-a-rotten-tomatoes-record-heres-what-greta-gerwig-has-to-say-about-that/" class="articleLink unstyled">
+                                                <div class="newsPhoto" style="background-image:url('https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2017/11/27110617/600LadyBird2.jpg')"></div>
+                                                <div class="newsTitle">
+                                                    Lady Bird Just Broke a Rotten Tomatoes Record. Here&#8217;s How Got Greta Gerwig Responded</div>
+                                            </a>
+                                        </div>
+                                    <div class="newsContainerItem">
                                             <a href="https://editorial.rottentomatoes.com/article/box-office-pixar-tops-thanksgiving-weekend-with-coco/" class="articleLink unstyled">
                                                 <div class="newsPhoto" style="background-image:url('https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2017/11/26123035/RT_BoxOffice_Coco_600X314.jpg')"></div>
                                                 <div class="newsTitle">
                                                     Box Office: Pixar Tops Thanksgiving Weekend with <em>Coco</em></div>
-                                            </a>
-                                        </div>
-                                    <div class="newsContainerItem">
-                                            <a href="https://editorial.rottentomatoes.com/article/jude-law-joins-captain-marvel-and-more-movie-news/" class="articleLink unstyled">
-                                                <div class="newsPhoto" style="background-image:url('https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2017/04/14020300/Jude-Law-Ketchup.jpg')"></div>
-                                                <div class="newsTitle">
-                                                    Jude Law Joins <em>Captain Marvel</em>, and More Movie News</div>
                                             </a>
                                         </div>
                                     </div>
@@ -1259,7 +1259,7 @@ require(['jquery', 'facebook', 'globals'], function($, FB, RT) {
             <li class="header">Trending on RT</li>
             <li><a class="unstyled trendingLink" href="https://www.rottentomatoes.com/m/coco_2017" > Coco</a></li>
             <li><a class="unstyled trendingLink" href="https://www.rottentomatoes.com/m/justice_league_2017" > Justice League</a></li>
-            <li><a class="unstyled trendingLink" href="https://www.rottentomatoes.com/tv/godless/s01" > Godless</a></li>
+            <li><a class="unstyled trendingLink" href="https://editorial.rottentomatoes.com/article/lady-bird-just-broke-a-rotten-tomatoes-record-heres-what-greta-gerwig-has-to-say-about-that/" > Lady Bird's RT Record</a></li>
             <li><a class="unstyled trendingLink" href="http://editorial.rottentomatoes.com/guide/best-christmas-movies/" > Best Christmas Movies</a></li>
             </ul>
     </div>
@@ -1970,7 +1970,7 @@ require(["https://staticv2-4.rottentomatoes.com/static/dist/jspjs/bodyScript.tag
 <script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaCallback&render=explicit" async defer></script>
 <script>
     $(".easteregg").click(function () {
-        alert(window.location.href + " \n/lists/media.browser.jsp \nip-10-25-17-77 (BR) \nGA:empty");
+        alert(window.location.href + " \n/lists/media.browser.jsp \nip-10-25-23-16 (BR) \nGA:empty");
     });
 </script><script>
         require(["globals"], function(RT) {

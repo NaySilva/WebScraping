@@ -3,6 +3,7 @@ from pprint import pprint
 
 import requests
 import re
+import codecs
 from bs4 import BeautifulSoup
 import json
 import time
@@ -30,14 +31,14 @@ def download(url, num_retries=2):
 
 def save_data(link, path, action='w'):
     html = download(link)
-    file = open(path, action)
+    file = open(path, action, encoding='utf8')
     file.write(html)
     file.close()
     return path
 
 
 def result_question_1(path):
-    html = open(path, 'r')
+    html = open(path, 'r', encoding='utf8')
     soup = BeautifulSoup(html, 'html.parser')
     table = soup.find('table', id='tv-list-21')
     series = table.find_all('tr')
@@ -52,7 +53,7 @@ def result_question_1(path):
 
 
 def result_question_2(path):
-    html = open(path, 'r')
+    html = open(path, 'r', encoding='utf8')
     soup = BeautifulSoup(html, 'html.parser')
     table = soup.find('table', class_='chart full-width').tbody
     lines = table.find_all('tr')
@@ -70,7 +71,7 @@ def result_question_2(path):
 
 
 def result_question_3(path):
-    html = open(path, 'r')
+    html = open(path, 'r', encoding='utf8')
     soup = BeautifulSoup(html, 'html.parser')
     result = {}
     for i in range(5):
@@ -85,7 +86,7 @@ def result_question_3(path):
 
 
 def result_question_5(path):
-    xml = open(path, 'r')
+    xml = codecs.open(path, "r", "utf-8").read()
     soup = BeautifulSoup(xml, 'xml')
     empreendimentos = soup.find_all('empreendimento')
     total = 0
@@ -98,8 +99,9 @@ def result_question_5(path):
 
 
 def result_question_6(path):
-    xml = open(path, 'r')
+    xml = codecs.open(path, "r", "utf-8").read()
     soup = BeautifulSoup(xml, 'xml')
+
     empreendimentos = soup.find_all('copa:empreendimento')
     result = {}
     total = 0
@@ -143,7 +145,7 @@ def capturar_links():
 
 def result_question_4(path):
     dens_pop = {}
-    htmls = open(path, 'r')
+    htmls = open(path, 'r', encoding='utf8')
     soup = BeautifulSoup(htmls, 'html.parser')
     contries = soup.find_all('body')
     for country in contries: dens_pop.update(montar_item_dict(country))
@@ -152,7 +154,7 @@ def result_question_4(path):
 
 
 def montar_csv(results, path):
-    file = open(path, 'w')
+    file = open(path, 'w', encoding='utf8')
     titles = ';'.join(results[0].keys()) + '\n'
     file.write(titles)
     for result in results:
