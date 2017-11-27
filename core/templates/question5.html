@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+<div class="loader center" id="loading" >
+    <img src="{% static 'img/loading.gif' %}">
+</div>
+<div class="right" >
+    <a href="" onclick="loaderData(5);"><i class="small material-icons deep-orange-text text-lighten-2">autorenew</i></a>
+    <a href="{% static 'files/gasto_copa_2014.csv' %}"><i class="small material-icons deep-orange-text text-lighten-2">file_download</i></a>
+</div>
+
+<div id="content">
+    <h3><i class="material-icons">chevron_right</i>Portal da Transparência - Copa</h3>
+    <div class="row">
+        <div class="col s8 push-s2">
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>Cidade Sede</th>
+                        <th>Valor Total Previsto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for result in results %}
+                    <tr>
+                        <td>{{ result.cidade }}</td>
+                        <td>R$ {{ result.valor }}</td>
+                    </tr>
+                    {% endfor %}
+                    <!--<tr>-->
+                        <!--<td><b>TOTAL</b></td>-->
+                        <!--<td><b>R$ {{ total }}</b></td>-->
+                    <!--</tr>-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

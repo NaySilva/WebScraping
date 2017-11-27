@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+
+<div class="loader center" id="loading" >
+    <img src="{% static 'img/loading.gif' %}">
+</div>
+<div id="content">
+    <div class="right" >
+        <a href="" onclick="loaderData(1);"><i class="small material-icons deep-orange-text text-lighten-2">autorenew</i></a>
+        <a href="{% static 'files/rotten.csv'%}"><i class="small material-icons deep-orange-text text-lighten-2">file_download</i></a>
+    </div>
+
+    <h3><i class="material-icons">chevron_right</i>Rotten Tomatoes</h3>
+    <div class="row">
+        <div class="col s8 push-s2">
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Avaliação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for result in results %}
+                    <tr>
+                        <td>{{ result.title }}</td>
+                        <td>{{ result.review }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

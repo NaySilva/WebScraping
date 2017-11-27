@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="loader center" id="loading" >
+    <img src="{% static 'img/loading.gif' %}">
+</div>
+<div id="content">
+    <div class="right" >
+        <a href="" onclick="loaderData(3);" ><i class="small material-icons deep-orange-text text-lighten-2">autorenew</i></a>
+        <a href="{% static 'files/clima_tempo.csv'%}"><i class="small material-icons deep-orange-text text-lighten-2">file_download</i></a>
+    </div>
+    <h3><i class="material-icons">chevron_right</i>Clima Tempo</h3>
+    <div class="row">
+        <div class="col s8 push-s2">
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Temperatura Maxima</th>
+                        <th>Temperatura Minima</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for result in results %}
+                    <tr>
+                        <td>{{ result.date }}</td>
+                        <td>{{ result.tempMax }}</td>
+                        <td>{{ result.tempMin }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}

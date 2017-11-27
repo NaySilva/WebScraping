@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <br><br>
+    <ul class="collapsible popout" data-collapsible="accordion">
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons deep-orange-text text-darken-3">filter_1</i>
+                Rotten Tomatoes
+            </div>
+            <div class="collapsible-body">
+                <p>Listar os nomes das series e suas respectivas avaliações.
+                    <a href='https://www.rottentomatoes.com/browse/tv-list-1' target='_blank' style="float: right;"><i class="material-icons deep-orange-text text-lighten-2">link</i></a></p>
+                <div class="center" >
+                    <a href="{% url 'question1' %}" class="waves-effect waves-light btn deep-orange lighten-1">Resultado</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons deep-orange-text text-darken-3">filter_2</i>
+                IMDb
+            </div>
+            <div class="collapsible-body">
+                <p>Listar os títulos do valor faturado no fim de semana, o valor acumulado e o
+número de semanas no ranking.
+                    <a href="http://www.imdb.com/chart/boxoffice" target='_blank' style="float: right;"><i class="material-icons deep-orange-text text-lighten-2">link</i></a></p>
+                <p><b>OBS:</b> Permita também salvar os dados em um arquivo com formato CSV.</p>
+                <div class="center" >
+                    <a href="{% url 'question2' %}" class="waves-effect waves-light btn deep-orange lighten-1">Resultado</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons deep-orange-text text-darken-3">filter_3</i>
+                Clima Tempo
+            </div>
+            <div class="collapsible-body">
+                <p>Exibir os dados referentes ao clima de Teresina.
+                    <a href="https://www.climatempo.com.br/previsao-do-tempo/cidade/264/teresina-pi" target='_blank' style="float: right;"><i class="material-icons deep-orange-text text-lighten-2">link</i></a></p>
+                <p><b>OBS:</b> Guarde em banco as 5 últimas atualizações.</p>
+                <div class="center" >
+                    <a href="{% url 'question3' %}" class="waves-effect waves-light btn deep-orange lighten-1">Resultado</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons deep-orange-text text-darken-3">filter_4</i>
+                Example Web Scraping
+            </div>
+            <div class="collapsible-body">
+                <p>Calcular a densidade populacional de todos os países disponíveis.
+                    <a href="http://example.webscraping.com/" target='_blank' style="float: right;"><i class="material-icons deep-orange-text text-lighten-2">link</i></a></p>
+                <div class="center" >
+                    <a href="{% url 'question4' %}" class="waves-effect waves-light btn deep-orange lighten-1">Resultado</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons deep-orange-text text-darken-3">filter_5</i>
+                Portal da Transparência - Copa
+            </div>
+            <div class="collapsible-body">
+                <p>Exibir o valor total de gastos com as obras da copa de 2014 e os gastos totais por unidade sede
+da copa.
+                    <a href="http://www.portaltransparencia.gov.br/copa2014/api/rest/empreendimento" target='_blank' style="float: right;"><i class="material-icons deep-orange-text text-lighten-2">link</i></a></p>
+                <p><b>OBS:</b> Permita salva os dados em formato CSV.</p>
+                <div class="center" >
+                    <a href="{% url 'question5' %}" class="waves-effect waves-light btn deep-orange lighten-1">Resultado</a>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+
+{% endblock %}
+
+
+{% block js %}
+    <script>
+        $(document).ready(function(){
+            $('.collapsible').collapsible();
+          });
+    </script>
+
+{% endblock %}
